@@ -43,12 +43,12 @@ initContainer:
   command: "/bin/sh"
   args: [
       "-c",
-      "git clone https://github.com/delimitrou/ntsiris.git /ntsiris &&
-      cp -r /ntsiris/socialNetwork/gen-lua/* /gen-lua/ &&
-      cp -r /ntsiris/socialNetwork/docker/openresty-thrift/lua-thrift/* /lua-thrift/ &&
-      cp -r /ntsiris/socialNetwork/nginx-web-server/lua-scripts/* /lua-scripts/ &&
-      cp -r /ntsiris/socialNetwork/nginx-web-server/pages/* /pages/ &&
-      cp /ntsiris/socialNetwork/keys/* /keys/ ",
+      "git clone https://github.com/delimitrou/DeathStarBench.git /DeathStarBench &&
+      cp -r /DeathStarBench/socialNetwork/gen-lua/* /gen-lua/ &&
+      cp -r /DeathStarBench/socialNetwork/docker/openresty-thrift/lua-thrift/* /lua-thrift/ &&
+      cp -r /DeathStarBench/socialNetwork/nginx-web-server/lua-scripts/* /lua-scripts/ &&
+      cp -r /DeathStarBench/socialNetwork/nginx-web-server/pages/* /pages/ &&
+      cp /DeathStarBench/socialNetwork/keys/* /keys/ ",
     ]
 
 volumes:
