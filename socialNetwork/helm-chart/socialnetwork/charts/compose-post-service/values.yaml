@@ -6,10 +6,10 @@ ports:
 
 container:
   command: ComposePostService
-  image: deathstarbench/social-network-microservices
+  image: ntsiris/social-network-microservices
   name: compose-post-service
-  ports: 
-  - containerPort: 9090
+  ports:
+    - containerPort: 9090
 
 configMaps:
   - name: jaeger-config.yml

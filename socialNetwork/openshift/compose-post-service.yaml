@@ -1,5 +1,5 @@
-    # depends_on:
-    #   - write-home-timeline-rabbitmq
+# depends_on:
+#   - write-home-timeline-rabbitmq
 ---
 apiVersion: v1
 kind: Service
@@ -11,7 +11,7 @@ metadata:
   namespace: social-network
 spec:
   ports:
-  - port: 9090
+    - port: 9090
   selector:
     death-star-project: social-network
     app: compose-post-service
@@ -38,13 +38,13 @@ spec:
       name: compose-post-service
     spec:
       containers:
-      - name: compose-post-service
-        image: deathstarbench/social-network-microservices
-        command: ["ComposePostService"]
-        volumeMounts:
-          - mountPath: /social-network-microservices/config/jaeger-config.yml
-            subPath: jaeger-config.yml
-            name: jaeger-conf-yaml
+        - name: compose-post-service
+          image: ntsiris/social-network-microservices
+          command: ["ComposePostService"]
+          volumeMounts:
+            - mountPath: /social-network-microservices/config/jaeger-config.yml
+              subPath: jaeger-config.yml
+              name: jaeger-conf-yaml
       restartPolicy: Always
       volumes:
         - name: jaeger-conf-yaml

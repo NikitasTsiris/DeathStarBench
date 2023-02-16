@@ -3,13 +3,13 @@ name: url-shorten-service
 ports:
   - port: 9090
     targetPort: 9090
- 
+
 container:
   command: UrlShortenService
-  image: deathstarbench/social-network-microservices
+  image: ntsiris/social-network-microservices
   name: url-shorten-service
-  ports: 
-  - containerPort: 9090
+  ports:
+    - containerPort: 9090
 
 configMaps:
   - name: jaeger-config.yml

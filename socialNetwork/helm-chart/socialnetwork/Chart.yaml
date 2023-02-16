@@ -1,6 +1,6 @@
 apiVersion: v2
 name: social-network
-description: Helm chart for SocialNetwork service in DeathStarBench
+description: Helm chart for SocialNetwork service in ntsiris
 type: application
 version: 0.1.0
 appVersion: "1.16.0"
